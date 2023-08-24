@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="eventos.js" async></script>
 </head>
 <body>
     <div style="padding: 5px; background-color: green;"><button onclick="Saludar()">Saludar!</button></div>
     <script> function Saludar(){
-        
-           alert('Hola!')
+            event.stopPropagation();
+            alert('Hola!')
 
     } 
     </script>
-     <script src="eventos.js"></script>
+     
 </body>
 </html>
